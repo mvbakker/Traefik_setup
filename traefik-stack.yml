@@ -17,7 +17,7 @@ services:
     image: traefik:latest
     command: --docker --docker.endpoint=tcp://socat:2375 --docker.watch --docker.swarmMode
     ports:
-      - 80:80
+      - 8080:80
     networks:
       - mgmt
       - app-entry
